@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athvi Academy Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <h2>Athvi Academy</h2>
+            <ul>
+                <li>Dashboard</li>
+                <li>My Courses</li>
+                <li>Assignments</li>
+                <li>Live Classes</li>
+            </ul>
+        </aside>
+        <main class="content">
+            <h1>Welcome back, {{ name or 'Learner' }}</h1>
+            <div class="cards">
+                <div class="card-box">Courses</div>
+                <div class="card-box">Assignments</div>
+                <div class="card-box">Announcements</div>
+                <div class="card-box attendance-card">
+                    <h3>Attendance</h3>
+                    <p>Present: 24</p>
+                    <p>Absent: 2</p>
+                    <p>Attendance Rate: 92%</p>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

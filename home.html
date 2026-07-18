@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athvi Academy</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="home-page">
+    <header class="hero-header">
+        <nav class="nav-bar">
+            <a class="brand" href="/">Athvi Academy</a>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/login">Login</a>
+                <a href="/register">Register</a>
+            </div>
+        </nav>
+
+        <section class="hero">
+            <div class="hero-copy">
+                <p class="eyebrow">Your learning hub</p>
+                <h1>Study smarter with Athvi Academy.</h1>
+                <p>Keep track of classes, assignments, and announcements in one place.</p>
+                <div class="hero-actions">
+                    <a class="primary-btn" href="/register">Create account</a>
+                    <a class="secondary-btn" href="/login">Sign in</a>
+                </div>
+            </div>
+
+            <div class="hero-card">
+                <h3>What you can do</h3>
+                <ul>
+                    <li>View your learning progress</li>
+                    <li>Stay on top of deadlines</li>
+                    <li>Receive the latest updates</li>
+                </ul>
+            </div>
+        </section>
+    </header>
+
+    <main class="showcase">
+        <section class="showcase-card showcase-large">
+            <svg viewBox="0 0 600 340" role="img" aria-label="Athvi Academy learning illustration">
+                <rect width="600" height="340" rx="28" fill="#e0f2fe"/>
+                <rect x="48" y="58" width="248" height="176" rx="18" fill="#ffffff"/>
+                <rect x="76" y="92" width="132" height="14" rx="7" fill="#2563eb"/>
+                <rect x="76" y="120" width="92" height="12" rx="6" fill="#93c5fd"/>
+                <rect x="76" y="148" width="140" height="12" rx="6" fill="#93c5fd"/>
+                <circle cx="449" cy="132" r="72" fill="#1d4ed8"/>
+                <path d="M404 130c12-26 44-38 74-28 10 3 20 8 28 15-15 12-33 20-54 20-14 0-28-3-40-7-4-1-6-2-8-0Z" fill="#bfdbfe"/>
+                <rect x="320" y="210" width="206" height="68" rx="16" fill="#ffffff"/>
+                <rect x="350" y="232" width="104" height="10" rx="5" fill="#2563eb"/>
+                <rect x="350" y="252" width="64" height="10" rx="5" fill="#93c5fd"/>
+            </svg>
+            <div>
+                <h3>Learn anywhere</h3>
+                <p>Enjoy a bright, welcoming experience designed for students, classes, and daily progress.</p>
+            </div>
+        </section>
+
+        <section class="features">
+            <section class="feature-card">
+                <h3>Courses</h3>
+                <p>Access your enrolled subjects and learning materials with ease.</p>
+            </section>
+            <section class="feature-card">
+                <h3>Assignments</h3>
+                <p>Track deadlines and submission reminders in one simple view.</p>
+            </section>
+            <section class="feature-card">
+                <h3>Announcements</h3>
+                <p>Stay informed with updates, events, and important notices.</p>
+            </section>
+        </section>
+    </main>
+</body>
+</html>
